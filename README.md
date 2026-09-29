@@ -25,6 +25,7 @@ An enterprise-grade, cloud-native\*, AI-powered\*\* agent that determines whethe
 
 ```bash
 python3 overengineered_agent.py
+python things
 ```
 
 Feeds it `"hey there"`, `"quiet please"`, `"asdkjaslkdj"`, and `"goodbye now"`. Only the first and last produce output: `Hello, Bob!` and `Goodbye, Bob!`. Every decision is then mined into the ledger, which reports `valid=True`.
