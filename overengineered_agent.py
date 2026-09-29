@@ -66,8 +66,8 @@ class IntentClassificationStrategy(Protocol):
 class KeywordPresenceIntentClassificationStrategy(IntentClassificationStrategy):
     """Classifies intent via a sophisticated lexical substring analysis."""
 
-    _POSITIVE_LEXICON = frozenset({"hi", "hello", "hey", "yo"})
-    _NEGATIVE_LEXICON = frozenset({"no", "quiet", "silence"})
+    _POSITIVE_LEXICON = frozenset({"Hi", "Hello", "Hey", "Yo"})
+    _NEGATIVE_LEXICON = frozenset({"No", "Quiet", "Silence"})
 
     def classify(self, utterance: Utterance) -> IntentClassification:
         tokens = set(utterance.text.lower().split())
